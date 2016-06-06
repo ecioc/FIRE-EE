@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <fragment
+        android:id="@+id/fragment01"
+        android:name="com.pthzkj.fire_ee.fragment.LeftMenuFragment"
+        android:layout_width="0dp"
+        android:layout_weight="0.1"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:id="@+id/main_center_framelayout"
+        android:layout_width="0dp"
+        android:layout_weight="0.35"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:id="@+id/main_right_framelayout"
+        android:layout_width="0dp"
+        android:layout_weight="0.55"
+        android:layout_height="match_parent"
+        android:background="#ff5"/>
+
+</LinearLayout>
