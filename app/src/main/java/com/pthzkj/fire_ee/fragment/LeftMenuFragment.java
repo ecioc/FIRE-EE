@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.pthzkj.fire_ee.R;
@@ -19,7 +20,7 @@ import com.pthzkj.fire_ee.R;
 public class LeftMenuFragment extends Fragment {
 
     private int[] btn_id = {R.id.btn1, R.id.btn2, R.id.btn3, R.id.btn4, R.id.btn5, R.id.btn6, R.id.btn7, R.id.btn8};
-    private Button[] btn = new Button[btn_id.length];
+    private ImageButton[] btn = new ImageButton[btn_id.length];
 
     @Nullable
     @Override
@@ -31,7 +32,7 @@ public class LeftMenuFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         for (int i = 0; i < btn.length; i++) {
-            btn[i] = (Button) getActivity().findViewById(btn_id[i]);
+            btn[i] = (ImageButton) getActivity().findViewById(btn_id[i]);
             btn[i].setOnClickListener(btnClicks);
         }
     }
