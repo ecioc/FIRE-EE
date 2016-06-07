@@ -20,9 +20,6 @@ import android.widget.RelativeLayout;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
-import com.baidu.mapapi.map.BaiduMapOptions;
-import com.baidu.mapapi.map.MapStatus;
-import com.baidu.mapapi.map.SupportMapFragment;
 import com.pthzkj.fire_ee.R;
 import com.pthzkj.fire_ee.customView.CircleImageView;
 import com.pthzkj.fire_ee.deploy.Common;

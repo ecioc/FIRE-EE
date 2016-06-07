@@ -19,8 +19,8 @@ public class NavigationFragment extends Fragment {
 
     // 百度地图控件
     private MapView mMapView;
-
     public BaiduMap mBaiduMap;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
