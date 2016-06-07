@@ -43,6 +43,7 @@ public class UnitPhoneFragment extends Fragment {
     private SimpleAdapter simpleAdapter;
 
     private SearchView searchView;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -57,7 +58,7 @@ public class UnitPhoneFragment extends Fragment {
         searchUnitPhoneKey();
     }
 
-    private void init(){
+    private void init() {
         listView = (ListView) getActivity().findViewById(R.id.unit_phone_list);
         searchView = (SearchView) getActivity().findViewById(R.id.searchView);
     }
@@ -65,7 +66,7 @@ public class UnitPhoneFragment extends Fragment {
     /**
      * get unit_phone data
      */
-    private void getUrl(){
+    private void getUrl() {
         AsyncHttpClient client = new AsyncHttpClient();
         client.get(Common.URL + Common.FIRST_INTERFACE + "getUnitPhone", new AsyncHttpResponseHandler() {
             @Override
@@ -115,9 +116,9 @@ public class UnitPhoneFragment extends Fragment {
     }
 
     /**
-     *  search unit_phone key
+     * search unit_phone key
      */
-    private void searchUnitPhoneKey(){
+    private void searchUnitPhoneKey() {
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
@@ -134,13 +135,17 @@ public class UnitPhoneFragment extends Fragment {
     }
 
     public void searchItem(String name) {
+        arrayList.clear();
         for (int i = 0; i < fixList.size(); i++) {
-            int index = fixList.get(i).get("unitPhoneName").toString().indexOf(name);
-            Log.d(Common.TAG, "index:" + index);
-            // 存在匹配的数据
-            if (index != -1) {
-                arrayList.clear();
+            if (name.equals(null)) {
                 arrayList.add(fixList.get(i));
+            } else {
+                int index = fixList.get(i).get("unitPhoneName").toString().indexOf(name);
+                Log.d(Common.TAG, "index:" + index);
+                // 存在匹配的数据
+                if (index != -1) {
+                    arrayList.add(fixList.get(i));
+                }
             }
         }
         simpleAdapter.notifyDataSetChanged();

@@ -7,7 +7,7 @@ public class Common {
     //log tag
     public static final String TAG = "FIRE-EE";
     //连接地址
-    public static final String URL = "http://192.168.2.100:5280";
+    public static final String URL = "http://112.124.49.4:1862";
     //第一版接口
     public static final String FIRST_INTERFACE = "/json/MCommon?action=";
     //第二版接口

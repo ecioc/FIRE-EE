@@ -2,6 +2,14 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#247DB5</color>
 
+    <color name="color1">#247DB5</color>
+
+    <color name="dark">#000</color>
+
+    <!--全透明-->
+    <color name="translucent">#00000000</color>
+    <!--左侧边底色-->
+    <color name="lefeBaseColor">#10B6F0</color>
 </resources>
