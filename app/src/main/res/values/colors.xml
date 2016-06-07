@@ -6,10 +6,17 @@
 
     <color name="color1">#247DB5</color>
 
+    <color name="wihte">#fff</color>
     <color name="dark">#000</color>
 
     <!--全透明-->
     <color name="translucent">#00000000</color>
     <!--左侧边底色-->
-    <color name="lefeBaseColor">#10B6F0</color>
+    <color name="lefeBaseColor">#12B7F5</color>
+
+    <!-- 背景阴影颜色 -->
+    <color name="color_shadow">#c6c6c6</color>
+
+    <!--头像点击后得颜色-->
+    <color name="head_onclick">#11ADE8</color>
 </resources>

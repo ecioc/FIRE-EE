@@ -1,73 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lefeBaseColor"
     android:orientation="vertical">
 
-    <ImageButton
-        android:id="@+id/btn1"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/i1"/>
+    <LinearLayout
+        android:id="@+id/head_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <ImageButton
-        android:id="@+id/btn2"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+    <com.pthzkj.fire_ee.customView.CircleImageView
+        android:id="@+id/head_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/i2"/>
+        app:border_width="2dp"
+        app:border_color="@color/translucent"
+        android:src="@drawable/i1625982"/>
 
-    <ImageButton
-        android:id="@+id/btn3"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/i3"/>
+    </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/btn4"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/i4"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp">
 
-    <ImageButton
-        android:id="@+id/btn5"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/i5"/>
+        <ListView
+            android:id="@+id/left_menu_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="10dp"
+            android:divider="#00000000"/>
 
-    <ImageButton
-        android:id="@+id/btn6"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/i6"/>
-
-    <ImageButton
-        android:id="@+id/btn7"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/i7"/>
-
-    <ImageButton
-        android:id="@+id/btn8"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/i8"/>
-
+    </LinearLayout>
 
 </LinearLayout>

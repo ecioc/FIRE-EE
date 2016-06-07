@@ -20,7 +20,6 @@
             android:id="@+id/main_btn1"
             android:layout_width="160dp"
             android:layout_height="160dp"
-            android:clickable="true"
             android:src="@drawable/main_btn1"
             app:cb_color="@color/color1"/>
 
@@ -29,7 +28,6 @@
             android:layout_width="160dp"
             android:layout_height="160dp"
             android:layout_marginLeft="120dp"
-            android:clickable="true"
             android:src="@drawable/main_btn2"
             app:cb_color="@color/color1"/>
 

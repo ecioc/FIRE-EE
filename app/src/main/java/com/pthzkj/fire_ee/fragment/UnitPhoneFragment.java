@@ -97,7 +97,7 @@ public class UnitPhoneFragment extends Fragment {
                             Bundle args = new Bundle();
                             args.putString("unitPhoneNumber", temp.getText().toString());
                             unitPhoneContentFragment.setArguments(args);
-                            transaction.replace(R.id.main_right_framelayout, unitPhoneContentFragment);
+                            transaction.replace(R.id.right_framelayout, unitPhoneContentFragment);
                             transaction.addToBackStack(null);
                             transaction.commit();
                         }
